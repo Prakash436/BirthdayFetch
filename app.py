@@ -55,8 +55,8 @@ birthday_dict = defaultdict(set)
 #Contacts preprocessing
 if contact_csv is not None:
     try:
-        contacts = contacts[['Name', 'Phone 1 - Value']]
-        contacts['Name'] = contacts['Name'].astype(str)
+        contacts = contacts[['First Name', 'Phone 1 - Value']]
+        contacts['Name'] = contacts['First Name'].astype(str)
         contacts['Phone 1 - Value'] = contacts['Phone 1 - Value'].astype(str)
         contacts['Phone 1 - Value'] = contacts['Phone 1 - Value'].apply(lambda x: ''.join(x.split()))
         for index, row in contacts.iterrows():
