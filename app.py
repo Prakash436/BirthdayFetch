@@ -102,6 +102,7 @@ if chat_text is not None and contact_csv is not None:
             mime='text/csv'
         )
         st.markdown("You can upload this CSV to [🥳 Notion Template](https://peridot-pamphlet-cb4.notion.site/Birthday-calendar-916245c06332480d9cb72813c9d91156?pvs=4). First make account on Notion then go through [Tutorial link](https://youtu.be/KpMdEcNgbV0).")
+        st.markdown(":red[Note - The birth year listed in this table is not accurate.]")
 
     except Exception as e:
         st.markdown("")
