@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from whatstk import df_from_txt_whatsapp
 from collections import defaultdict
-from custom_functions import extract_name
+from custom_functions import extract_name,convert_df
 
 
 # Chats Upload
