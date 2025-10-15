@@ -105,4 +105,4 @@ if chat_text is not None and contact_csv is not None:
         st.markdown(":red[Note - The birth year listed in this table is not accurate.]")
 
     except Exception as e:
-        st.markdown("")
+        st.markdown(":red[Failed to generate output.]")
